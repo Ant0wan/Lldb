@@ -1,6 +1,5 @@
-
-# setting prompt to name
-# settings set prompt '(jpriou) '
+# setting lldb prompt to name
+# settings set prompt <name>
 
 # setting disassembly to intel
 settings set target.x86-disassembly-flavor intel
