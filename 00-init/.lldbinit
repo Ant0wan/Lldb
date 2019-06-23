@@ -1,25 +1,9 @@
+
+# setting prompt to name
+# settings set prompt '(jpriou) '
+
+# setting disassembly to intel
 settings set target.x86-disassembly-flavor intel
-settings set prompt "(jpriou) "
-script print "\033[37m             jjjj                                          iiii                                    " 
-script print "            j::::j                                        i::::i                                   " 
-script print "\033[94m             jjjj                                          iiii                                    " 
-script print " "
-script print "            jjjjjjjppppp   ppppppppp   rrrrr   rrrrrrrrr  iiiiiii    ooooooooooo   uuuuuu    uuuuuu " 
-script print "            j:::::jp::::ppp:::::::::p  r::::rrr:::::::::r i:::::i  oo:::::::::::oo u::::u    u::::u " 
-script print "\033[34m            j::::jp:::::::::::::::::p r:::::::::::::::::r i::::i o:::::::::::::::ou::::u    u::::u " 
-script print "            j::::jpp::::::ppppp::::::prr::::::rrrrr::::::ri::::i o:::::ooooo:::::ou::::u    u::::u " 
-script print "            j::::j p:::::p     p:::::p r:::::r     r:::::ri::::i o::::o     o::::ou::::u    u::::u " 
-script print "            j::::j p:::::p     p:::::p r:::::r     rrrrrrri::::i o::::o     o::::ou::::u    u::::u " 
-script print "\033[36m            j::::j p:::::p     p:::::p r:::::r            i::::i o::::o     o::::ou::::u    u::::u " 
-script print "            j::::j p:::::p    p::::::p r:::::r            i::::i o::::o     o::::ou:::::uuuu:::::u " 
-script print "            j::::j p:::::ppppp:::::::p r:::::r           i::::::io:::::ooooo:::::ou:::::::::::::::uu"
-script print "            j::::j p::::::::::::::::p  r:::::r           i::::::io:::::::::::::::o u:::::::::::::::u"
-script print "            j::::j p::::::::::::::pp   r:::::r           i::::::i oo:::::::::::oo   uu::::::::uu:::u"
-script print "            j::::j p::::::pppppppp     rrrrrrr           iiiiiiii   ooooooooooo       uuuuuuuu  uuuu"
-script print "            j::::j p:::::p                                                                          "
-script print "  jjjj      j::::j p:::::p                                                                          "
-script print "  j::::jj   j:::::jp:::::::p                                                                         "
-script print "  j::::::jjj::::::jp:::::::p                                                                         "
-script print "   jj::::::::::::j p:::::::p                                                                         "
-script print "     jjj::::::jjj  ppppppppp                                                                         "
-script print "        jjjjjj   \033[0m                                                                              "
+
+# print banner
+command script import banner_init.py
