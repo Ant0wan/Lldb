@@ -7,6 +7,6 @@ breakpoint command add --one-liner 'expression count == 0 ? tab[0] = tab[1] : ta
 breakpoint set --address 0x100000d52 --one-shot
 breakpoint command add --one-liner 'expression count = tab[1]; tab[1] = tab[2]; tab[2] = count; count = 0'
 breakpoint set --address 0x10000103b
-breakpoint command add --one-liner 'expression tmp = min[0] + min[1] + min[2]'
+breakpoint command add --one-liner 'expression double tmp = (double)min[0] + (double)min[1] + (double)min[2]'
 breakpoint set --address 0x1000010a5
 breakpoint command add --one-liner 'expression biggest = min[0] > ( min[1] > min[2] ? min[1] : min[2] ) ? min[0] : ( min[1] > min[2] ? min[1] : min[2] );'
